@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="ur" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>پلوگِن شاپ — Urdu AI Tools Market</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <!-- Tailwind via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root{
+      --bg:#0f172a; /* slate-900 */
+      --card:#0b1220; /* deeper */
+      --accent1:#06b6d4; /* teal-400 */
+      --accent2:#7c3aed; /* violet-600 */
+      --gold:#fbbf24; /* amber-400 */
+    }
+    html,body{height:100%;font-family:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,'Noto Sans',sans-serif;}
+    /* custom glassmorphism */
+    .glass{backdrop-filter: blur(8px) saturate(120%); background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)); border: 1px solid rgba(255,255,255,0.04);}
+    /* rtl friendly small adjustments */
+    .product-card:hover{transform:translateY(-6px) scale(1.01);} .product-card{transition:all .25s cubic-bezier(.2,.9,.2,1);}  
+    /* subtle gradient text */
+    .grad-text{background:linear-gradient(90deg,var(--accent2),var(--accent1)); -webkit-background-clip:text;background-clip:text;color:transparent}
+  </style>
+</head>
+<body class="bg-[linear-gradient(180deg,#071029_0%,#081029_50%)] text-slate-200">
+  <header class="max-w-7xl mx-auto p-6 flex items-center justify-between">
+    <div class="flex items-center gap-4">
+      <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-violet-600 to-teal-400 flex items-center justify-center shadow-xl">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 7h18M7 21V7" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <div>
+        <h1 class="text-xl font-bold">اردو اے آئی پلگِن شاپ</h1>
+        <p class="text-xs text-slate-400">پریمیئم پلگِنز، ٹیمپلیٹس اور پرامپٹ پیکز</p>
+      </div>
+    </div>
+    <nav class="flex items-center gap-4">
+      <a class="text-slate-300 hover:text-white" href="#products">پروڈکٹس</a>
+      <a class="text-slate-300 hover:text-white" href="#features">خصوصیات</a>
+      <a class="text-slate-300 hover:text-white" href="#pricing">قیمتیں</a>
+      <button id="cartBtn" class="ml-2 bg-gradient-to-l from-violet-600 to-teal-400 px-3 py-2 rounded-lg text-black font-semibold">کارٹ (<span id="cartCount">0</span>)</button>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+    <div>
+      <h2 class="text-4xl md:text-5xl font-extrabold leading-tight">اپنی AI ورک فلو کو تیز کریں — <span class="grad-text">پلگِنز</span>، <span class="text-amber-300">ٹیمپلیٹس</span> اور <span class="text-cyan-300">پرامپٹس</span></h2>
+      <p class="text-slate-400 mt-4">دوست، ہم نے خاص طور پر اُن لوگوں کے لئے اوزار بنائے ہیں جو پلگ اینڈ پلے حل چاہتے ہیں۔ آسان انسٹال، مکمل ڈاکیومنٹیشن اور لائف ٹائم اپڈیٹس۔</p>
+      <div class="mt-6 flex gap-3">
+        <a href="#products" class="px-5 py-3 bg-gradient-to-l from-violet-600 to-teal-400 rounded-lg font-semibold text-black">ابھی خریدیں</a>
+        <a href="#features" class="px-5 py-3 border border-slate-700 rounded-lg text-slate-300">خصوصیات دیکھیں</a>
+      </div>
+      <div class="mt-6 grid grid-cols-3 gap-3 text-xs text-slate-400">
+        <div class="glass p-3 rounded-lg">SSL Secured</div>
+        <div class="glass p-3 rounded-lg">30 دن ریفنڈ</div>
+        <div class="glass p-3 rounded-lg">لائف ٹائم اپڈیٹس</div>
+      </div>
+    </div>
+    <div class="relative">
+      <div class="w-full h-80 glass rounded-2xl p-6 shadow-2xl overflow-hidden">
+        <!-- placeholder hero preview (3D/Canvas possible) -->
+        <div class="h-full w-full flex items-center justify-center">
+          <div class="text-center">
+            <h3 class="text-2xl font-bold grad-text">ToolKit Pro</h3>
+            <p class="text-slate-400 mt-2">ایک مکمل پلگِن جس سے آپ کے GPT ورک فلو میں اضافہ ہوگا — انسٹال کریں، کنفیگر کریں، اور خودکار بنائیں۔</p>
+            <div class="mt-4 flex justify-center gap-3">
+              <span class="px-4 py-2 rounded-lg bg-slate-800 text-slate-200">v2.1</span>
+              <span class="px-4 py-2 rounded-lg bg-amber-500 text-black font-semibold">Best Seller</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="absolute -left-6 -bottom-6 w-52 h-52 rounded-full bg-gradient-to-br from-indigo-700 to-teal-400 opacity-20 blur-3xl"></div>
+    </div>
+  </section>
+
+  <!-- PRODUCTS GRID -->
+  <section id="products" class="max-w-7xl mx-auto px-6 py-10">
+    <h3 class="text-2xl font-bold mb-6">ممتاز پروڈکٹس</h3>
+    <div id="productGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- JS will render product cards here -->
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section id="features" class="max-w-7xl mx-auto px-6 py-10">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="glass p-6 rounded-xl">
+        <h4 class="font-semibold text-lg">آسان انسٹال</h4>
+        <p class="text-slate-400 mt-2">ہر پلگِن کے ساتھ قدم بہ قدم انسٹال گائیڈ اور ویڈیو شامل ہیں۔</p>
+      </div>
+      <div class="glass p-6 rounded-xl">
+        <h4 class="font-semibold text-lg">پرامپٹ پیکس</h4>
+        <p class="text-slate-400 mt-2">پریمیم پرامپٹس جو آپ کے نتائج کو بہتر بنائیں گے — تمام زبانوں میں کام کرتے ہیں۔</p>
+      </div>
+      <div class="glass p-6 rounded-xl">
+        <h4 class="font-semibold text-lg">کسٹم سپورٹ</h4>
+        <p class="text-slate-400 mt-2">پریمیئم پلان میں 1:1 رہنمائی شامل ہے اور ہماری ٹیم انسٹال میں بھی مدد کرتی ہے۔</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING/FAQ -->
+  <section id="pricing" class="max-w-7xl mx-auto px-6 py-10">
+    <h3 class="text-2xl font-bold mb-6">قیمتیں</h3>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="p-6 rounded-xl glass">
+        <h4 class="font-bold">Basic</h4>
+        <p class="text-slate-400 mt-2">$19 — ایک پلگِن، ایک سائٹ</p>
+        <ul class="text-slate-400 mt-3 list-disc mr-5">
+          <li>30 دن ریفنڈ</li>
+          <li>ای میل سپورٹ</li>
+        </ul>
+        <button class="mt-4 w-full py-2 rounded-lg bg-slate-700">Buy Basic</button>
+      </div>
+      <div class="p-6 rounded-xl glass border-2 border-violet-600">
+        <h4 class="font-bold">Pro</h4>
+        <p class="text-slate-400 mt-2">$49 — 5 پلگِنز + پریمیم پرامپٹس</p>
+        <ul class="text-slate-400 mt-3 list-disc mr-5">
+          <li>Prioritized Support</li>
+          <li>Lifetime Updates</li>
+        </ul>
+        <button class="mt-4 w-full py-2 rounded-lg bg-gradient-to-l from-violet-600 to-teal-400 text-black">Buy Pro</button>
+      </div>
+      <div class="p-6 rounded-xl glass">
+        <h4 class="font-bold">Enterprise</h4>
+        <p class="text-slate-400 mt-2">Custom — Unlimited</p>
+        <ul class="text-slate-400 mt-3 list-disc mr-5">
+          <li>White-label</li>
+          <li>Dedicated Onboarding</li>
+        </ul>
+        <button class="mt-4 w-full py-2 rounded-lg bg-slate-700">Request Demo</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="max-w-7xl mx-auto px-6 py-10 text-slate-400">
+    <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
+      <div>
+        <h5 class="font-bold">اردو اے آئی</h5>
+        <p class="text-sm">ہم آپ کو آسان اور طاقتور AI اوزار دینے کے لئے پرعزم ہیں۔</p>
+      </div>
+      <div class="flex gap-4">
+        <a class="text-slate-300" href="#">Terms</a>
+        <a class="text-slate-300" href="#">Privacy</a>
+        <a class="text-slate-300" href="#contact">Contact</a>
+      </div>
+    </div>
+    <p class="text-xs mt-6">© 2025 Urdu AI. All rights reserved.</p>
+  </footer>
+
+  <!-- CART & MODALS -->
+  <div id="cartModal" class="fixed inset-0 hidden items-center justify-center z-50">
+    <div class="absolute inset-0 bg-black/60" onclick="toggleCart(false)"></div>
+    <div class="relative w-full max-w-2xl mx-4">
+      <div class="glass p-6 rounded-2xl">
+        <h4 class="font-bold text-lg">آپ کا کارٹ</h4>
+        <div id="cartItems" class="mt-4 space-y-3"></div>
+        <div class="mt-4 flex justify-between items-center">
+          <div class="text-slate-300">کل: <span id="cartTotal">$0</span></div>
+          <div class="flex gap-2">
+            <button onclick="toggleCart(false)" class="px-4 py-2 rounded-lg border">Continue</button>
+            <button onclick="checkout()" class="px-4 py-2 rounded-lg bg-gradient-to-l from-violet-600 to-teal-400 text-black">Checkout</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SIMPLE JS: render products, cart logic, demo checkout -->
+  <script>
+    // Sample product data (edit as needed)
+    const PRODUCTS = [
+      {id:'toolkit-pro', title:'ToolKit Pro', price:29, short:'پلگ اینڈ پلے AI پلگِن', desc:'Auto workflows, scheduler, prompt library', badge:'Best Seller'},
+      {id:'seo-plugin', title:'SEO GPT Plugin', price:19, short:'SEO پر مبنی پوسٹ جنریٹر', desc:'Keyword optimization + meta generator', badge:''},
+      {id:'email-gen', title:'EmailGen Prompts', price:15, short:'دستبردار پرامپٹس برائے ای میل', desc:'ٹیمپلیٹس اور کسٹمائز بلوک', badge:'Popular'},
+      {id:'studio-kit', title:'Studio Kit 3D', price:49, short:'3D/Canvas انٹرفیس پیک', desc:'متحرک ویژول اور پری سیٹس', badge:''},
+      {id:'enterprise-addon', title:'Enterprise Addon', price:199, short:'White-label + API', desc:'Custom integration and onboarding', badge:'Enterprise'},
+      {id:'prompt-pack', title:'Premium Prompt Pack', price:9, short:'50+ highest converting prompts', desc:'کٹیگری وائز پرامپٹس', badge:''}
+    ];
+
+    const cart = new Map();
+
+    function money(n){return '$'+Number(n).toFixed(2)}
+
+    function renderProducts(){
+      const grid = document.getElementById('productGrid');
+      grid.innerHTML='';
+      PRODUCTS.forEach(p=>{
+        const card = document.createElement('div');
+        card.className='product-card p-5 rounded-2xl glass';
+        card.innerHTML = `
+          <div class="flex justify-between items-start">
+            <div>
+              <h4 class="font-bold text-lg">${p.title}</h4>
+              <p class="text-slate-400 text-sm mt-1">${p.short}</p>
+            </div>
+            <div class="text-right">
+              <div class="text-amber-300 font-semibold">${money(p.price)}</div>
+              ${p.badge?`<div class=\"mt-1 text-xs bg-amber-400 text-black px-2 py-1 rounded\">${p.badge}</div>`:''}
+            </div>
+          </div>
+          <p class="text-slate-400 mt-4 text-sm">${p.desc}</p>
+          <div class="mt-4 flex gap-3">
+            <button class="px-4 py-2 rounded-lg border" onclick="viewDetails('${p.id}')">ملاحظہ کریں</button>
+            <button class="px-4 py-2 rounded-lg bg-gradient-to-l from-violet-600 to-teal-400 text-black" onclick="addToCart('${p.id}')">خریدیں</button>
+          </div>
+        `;
+        grid.appendChild(card);
+      });
+    }
+
+    function addToCart(id){
+      const p = PRODUCTS.find(x=>x.id===id);
+      if(!p) return;
+      const qty = cart.get(id) || 0;
+      cart.set(id, qty+1);
+      updateCartBadge();
+      alert(p.title + ' کارٹ میں شامل ہوگیا');
+    }
+
+    function updateCartBadge(){
+      let totalCount=0; let totalPrice=0;
+      cart.forEach((qty,id)=>{ totalCount+=qty; const p=PRODUCTS.find(x=>x.id===id); totalPrice+=p.price*qty; });
+      document.getElementById('cartCount').innerText = totalCount;
+      document.getElementById('cartTotal').innerText = money(totalPrice);
+    }
+
+    function toggleCart(show=true){
+      const modal=document.getElementById('cartModal');
+      if(show) {
+        renderCartItems(); modal.classList.remove('hidden'); modal.classList.add('flex');
+      } else { modal.classList.add('hidden'); modal.classList.remove('flex'); }
+    }
+
+    document.getElementById('cartBtn').addEventListener('click', ()=>toggleCart(true));
+
+    function renderCartItems(){
+      const wrap = document.getElementById('cartItems'); wrap.innerHTML='';
+      let total=0;
+      cart.forEach((qty,id)=>{
+        const p = PRODUCTS.find(x=>x.id===id);
+        total += p.price*qty;
+        const item = document.createElement('div');
+        item.className='flex justify-between items-center bg-slate-900 p-3 rounded-lg';
+        item.innerHTML = `
+          <div>
+            <div class=\"font-semibold\">${p.title}</div>
+            <div class=\"text-sm text-slate-400\">${qty} × ${money(p.price)}</div>
+          </div>
+          <div class=\"flex gap-2 items-center\">
+            <button onclick=\"changeQty('${id}', -1)\" class=\"px-2 py-1 bg-slate-800 rounded\">-</button>
+            <button onclick=\"changeQty('${id}', 1)\" class=\"px-2 py-1 bg-slate-800 rounded\">+</button>
+          </div>
+        `;
+        wrap.appendChild(item);
+      });
+      document.getElementById('cartTotal').innerText = money(total);
+      if(cart.size===0) wrap.innerHTML = '<div class="text-slate-400">کارٹ خالی ہے</div>';
+    }
+
+    function changeQty(id,delta){
+      const q = cart.get(id)||0; const nq = q+delta; if(nq<=0) cart.delete(id); else cart.set(id,nq);
+      updateCartBadge(); renderCartItems();
+    }
+
+    function viewDetails(id){
+      const p = PRODUCTS.find(x=>x.id===id);
+      if(!p) return; alert(p.title + "\n\n" + p.desc + "\n\nقیمت: " + money(p.price));
+    }
+
+    function checkout(){
+      if(cart.size===0){alert('پہلے کوئی آئٹم شامل کریں'); return;}
+      // Demo checkout: In production replace this with Stripe/PayFast/SSLECOM integration
+      const items = []; cart.forEach((qty,id)=>{ const p = PRODUCTS.find(x=>x.id===id); items.push({id:p.id, title:p.title, price:p.price, qty}); });
+      console.log('Checkout items:', items);
+      alert('ڈیمو چیک آؤٹ — یہ صرف نظارہ ہے۔ ادائیگی کے لئے Stripe یا مقامی گیٹ وے شامل کریں۔');
+      // Clear cart after demo
+      cart.clear(); updateCartBadge(); toggleCart(false);
+    }
+
+    // initial render
+    renderProducts(); updateCartBadge();
+
+    // Accessibility: close cart on Escape
+    document.addEventListener('keydown', (e)=>{ if(e.key==='Escape') toggleCart(false); });
+  </script>
+
+</body>
+</html>
